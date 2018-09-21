@@ -1,0 +1,41 @@
+first:
+1
+5
+1
+4
+2
+2
+3
+
+
+secend:
+function f(num) {
+    var sum = 0;
+    sum += num;
+    var func = function(param) {
+        sum += param;
+        return func;
+    }
+    return func;
+}
+
+
+third:
+	function x(arr,s){
+			var arr1 = [];
+			for(var i =0;i<arr.length;i++) {
+				if(arr[i]>=s) {
+					return -1;
+				}
+				else {
+					for(var j=i;j<arr.length;j++) {
+						if(arr[j]>=s) {break;}
+						else {
+							if(arr[i]+arr[j]==s) {
+								return arr1 = arr1.push(arr[i],arr[j]);
+							}
+						}
+					}
+				}
+			}
+		}
