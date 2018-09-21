@@ -20,8 +20,10 @@ function f(num) {
 }
 
 
-third:
-	function x(arr,s){
+third：
+var arr=[1,2,4]
+		var s =3;
+		function x(arr,s){
 			var arr1 = [];
 			for(var i =0;i<arr.length;i++) {
 				if(arr[i]>=s) {
@@ -29,13 +31,17 @@ third:
 				}
 				else {
 					for(var j=i;j<arr.length;j++) {
+						//console.log(arr[j]);
 						if(arr[j]>=s) {break;}
 						else {
 							if(arr[i]+arr[j]==s) {
-								return arr1 = arr1.push(arr[i],arr[j]);
+								
+								arr1.push(arr[i],arr[j]);
+								return arr1;
 							}
 						}
 					}
 				}
 			}
 		}
+		x(arr,s)
